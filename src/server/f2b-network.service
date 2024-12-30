@@ -3,8 +3,7 @@ Description=Fail2Ban Network Service
 After=network.target
 
 [Service]
-WorkingDirectory=/opt/f2b-network/
-ExecStart=./venv/bin/python3 ./f2b-network.py
+ExecStart=/opt/f2b-network/venv/bin/python3 /opt/f2b-network/f2b-network.py
 Restart=always
 
 [Install]
