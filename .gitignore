@@ -1,0 +1,8 @@
+src/client/logs
+src/server/logs
+src/server/__pycache__
+src/server/*.pyc
+src/server/venv
+src/server/instance
+.*
+!.gitignore

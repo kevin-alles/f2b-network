@@ -1,0 +1,11 @@
+[Unit]
+Description=Fail2Ban Network Service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/f2b-network/
+ExecStart=./venv/bin/python3 ./f2b-network.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
