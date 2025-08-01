@@ -1,1 +1,17 @@
+name: Test Runner
 
+on:
+  push:
+    branches: [main, devops-pipeline]
+  pull_request:
+    branches: [main, devops-pipeline]
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Test Runner
+        run: |
+          echo "test" 
+      
+          
